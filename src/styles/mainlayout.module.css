@@ -1,0 +1,40 @@
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: white;
+  flex-grow: 1;
+}
+
+.icon {
+  margin-right: 8px; /* Add margin between icon and text */
+}
+
+.sidebarOneTextMargin {
+  margin-top: 5%; /* Add space above the test button */
+}
+
+/* mainlayout.module.css */
+.categoryHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.newNoteIcon {
+  margin-left: 10px; /* Add margin between icons */
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.newNoteIcon:hover {
+  color: #555;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 10px; /* Add space between icons */
+  margin-right: 20px; /* Add margin to the right of the icons */
+}

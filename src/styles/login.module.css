@@ -1,0 +1,120 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2e3235;
+  color: white;
+}
+
+.loginBox {
+  background-color: #34393d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.loginTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Google Button */
+.googleButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.googleIcon {
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.googleButton:hover {
+  background-color: #f5f5f5;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-bottom: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+/* Labels and Inputs */
+.inputLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.inputField {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.inputField::placeholder {
+  color: #aaa;
+}
+
+/* Sign-in Button */
+.signInButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.signInButton:hover {
+  background-color: #155ab6;
+}
+
+/* Links */
+.linkContainer {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.link {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.errorMessage {
+  color: #ff4d4d; /* A red-ish color to indicate error */
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}

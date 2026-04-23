@@ -1,0 +1,15 @@
+.flexy {
+    display: flex;
+    flex-direction: row; /* Align items side by side */
+    height: 100vh; /* Make the container occupy the full height of the viewport */
+}
+
+.main-layout {
+    flex: 1; /* Make MainLayout take 50% of the width */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.ll-markdown {
+    flex: 1; /* Make LLMarkdown take 50% of the width */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
