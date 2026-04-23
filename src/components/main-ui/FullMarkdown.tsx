@@ -7,7 +7,7 @@ import {
   updateIsQuizableMD,
   updateNote,
   updateNotTrash,
-} from "@/pages/api/vectorsDatabase";
+} from "@/lib/clientApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBold,

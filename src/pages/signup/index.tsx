@@ -9,11 +9,22 @@ export default function SignUpPage() {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [message, setMessage] = useState<string | null>(null)
 
   async function signUp() {
-    const { error } = await client.auth.signUp({ email, password })
+    setMessage(null)
+    const { data, error } = await client.auth.signUp({ email, password })
     if (error) {
-      console.error(error)
+      setMessage(`Sign-up failed: ${error.message}`)
+      return
+    }
+    if (!data.session) {
+      const isExisting = !data.user || !data.user.identities || data.user.identities.length === 0
+      setMessage(
+        isExisting
+          ? `That email is already registered. Try signing in or resetting your password.`
+          : `Account created. Check ${email} for a confirmation link — you must confirm before you can sign in.`
+      )
       return
     }
     router.push('/main')
@@ -80,9 +91,15 @@ export default function SignUpPage() {
           Sign up
         </button>
 
+        {message && (
+          <div style={{ marginTop: 12, color: '#f87171', fontSize: 14 }}>
+            {message}
+          </div>
+        )}
+
         <div className={styles.linkContainer}>
           Already have an account?{' '}
-          <a href="/login" className={styles.link}>
+          <a href="/" className={styles.link}>
             Sign in
           </a>
         </div>

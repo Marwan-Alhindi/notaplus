@@ -3,7 +3,7 @@
 import React, { useContext, useState } from "react";
 import RenderText from "@/components/optional-split-ui/llm-ui/RenderText";
 import styles from "@/styles/LLMInterface.module.css";
-import { progressConversation } from "@/pages/api/llmConversation";
+import { progressConversation } from "@/lib/clientApi";
 import { UserContext } from "@/UserContext"; // <-- import your context
 
 export default function LLMInterface() {

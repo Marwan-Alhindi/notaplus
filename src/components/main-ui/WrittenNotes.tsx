@@ -4,7 +4,7 @@ import getStroke from "perfect-freehand";
 import styles from "@/styles/WrittenNotes.module.css";
 import Chatbot from "@/components/Chatbot/chatbot";
 import debounce from "@/utils/llmUtils";
-import { updateWrittenNote } from "@/pages/api/vectorsDatabase";
+import { updateWrittenNote } from "@/lib/clientApi";
 import { UserContext } from "@/UserContext";
 
 const options = {

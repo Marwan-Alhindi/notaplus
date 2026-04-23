@@ -1,13 +1,11 @@
 "use client";
 import React, { useContext, useState } from "react";
 import styles from "@/styles/FullMarkdown.module.css";
-import { progressConversation } from "@/pages/api/llmConversation";
+import { progressConversation, processPDF, createNotebook, saveFullNote } from "@/lib/clientApi";
 import RenderText from "@/components/optional-split-ui/llm-ui/RenderText";
 import "react-resizable/css/styles.css";
 import { faPaperclip, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { processPDF } from "@/pages/api/llmHandlePdf";
-import { createNotebook, saveFullNote } from "@/pages/api/vectorsDatabase";
 import { UserContext } from "@/UserContext";
 
 export default function Chatbot() {

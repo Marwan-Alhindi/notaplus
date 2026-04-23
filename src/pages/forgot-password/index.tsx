@@ -43,7 +43,7 @@ export default function ForgotPasswordPage() {
 
         <div className={styles.linkContainer}>
           Already have an account?{' '}
-          <a href="/login" className={styles.link}>
+          <a href="/" className={styles.link}>
             Sign in
           </a>
         </div>

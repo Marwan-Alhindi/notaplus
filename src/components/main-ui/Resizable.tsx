@@ -21,7 +21,7 @@ import {
   getAllNotebooks,
   getDeletedNotes,
   deleteNote,
-} from "@/pages/api/vectorsDatabase";
+} from "@/lib/clientApi";
 import DrawingCanvas from "./WrittenNotes";
 import { UserContext } from "@/UserContext";
 import { useRouter } from "next/router";

@@ -5,7 +5,7 @@ import {
   getAllUniqueTags,
   saveFullNote,
   saveHandWrittenNote,
-} from "@/pages/api/vectorsDatabase";
+} from "@/lib/clientApi";
 import styles from "@/styles/mainlayout.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
